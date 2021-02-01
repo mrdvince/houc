@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color(0xFF301E2F),
       body: Container(
-        height: mq.size.height - 100,
+        height: mq.size.height - 150,
         child: PageView(
             onPageChanged: (index) {
               setState(() {
@@ -48,8 +48,49 @@ class _HomeState extends State<Home> {
               _ListTileWidget(mq: mq, slides: slides, index: 1),
               _ListTileWidget(mq: mq, slides: slides, index: 2),
               _ListTileWidget(mq: mq, slides: slides, index: 3),
+              _ListTileWidget(mq: mq, slides: slides, index: 4),
             ]),
       ),
+      bottomSheet: slideIndex != slides.length -1 && slideIndex != 0 ? Container(
+        height: 150,
+        color: Color(0xFF301E2F),
+        child: Align(
+          alignment: Alignment.center,
+          child: ButtonTheme(
+            minWidth: 300.0,
+            height: 50.0,
+            child: FlatButton(
+              onPressed: () { pageController.animateToPage(slideIndex+1, duration: Duration(milliseconds: 400), curve: Curves.linear);
+              },
+              child: const Text(
+                'Next',
+                style: TextStyle(color: Colors.white),
+              ),
+              color: Color(0xFFFFAD3A),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+            ),
+          ),
+        ),
+      ) : InkWell(
+        onTap: (){
+          print("Get Started Now");
+        },
+        child: Visibility(
+          visible: slideIndex == 0 ? false : true,
+          child: Container(
+            height: 60,
+            color: Color(0xFF524D63),
+            alignment: Alignment.center,
+            child: Text(
+              "GET STARTED NOW",
+              style: TextStyle(color: Color(0xFFFFAD3A), fontWeight: FontWeight.w600),
+            ),
+          ),
+        ),
+      ),
+
     );
   }
 }
