@@ -17,10 +17,14 @@ dev_dependencies:
     sdk: flutter
   integration_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.8.1
 
 flutter:
-
   uses-material-design: true
-
   assets:
     - assets/
+
+flutter_icons:
+  image_path: "assets/logo.png"
+  android: true
+  ios: true
