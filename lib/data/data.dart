@@ -34,7 +34,16 @@ class SliderModel {
 List<SliderModel> getSlides() {
   List<SliderModel> slides = new List<SliderModel>();
   SliderModel sliderModel = new SliderModel();
-//0
+
+  // main
+  sliderModel.setDesc("");
+  sliderModel.setTitle("");
+  sliderModel.setImageAssetPath("assets/logo.png");
+  slides.add(sliderModel);
+
+  sliderModel = new SliderModel();
+
+  //0
   sliderModel.setDesc(
       "Praesent ultrices vitae nisi in tempor. Sed et nibh congue, tempus odio accumsan, fringilla tellus.");
   sliderModel.setTitle("Post your application");
@@ -60,7 +69,7 @@ List<SliderModel> getSlides() {
 
   sliderModel = new SliderModel();
 
-  //2
+  //3
   sliderModel.setDesc(
       "Praesent ultrices vitae nisi in tempor. Sed et nibh congue, tempus odio accumsan, fringilla tellus. ");
   sliderModel.setTitle("Get your application approved");
