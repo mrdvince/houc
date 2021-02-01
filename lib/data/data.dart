@@ -31,7 +31,7 @@ class SliderModel {
   }
 }
 List<SliderModel> getSlides() {
-  List<SliderModel> slides = <SliderModel>[];
+  List<SliderModel> slides = new List<SliderModel>();
   SliderModel sliderModel = new SliderModel();
 //1
   sliderModel.setDesc("Praesent ultrices vitae nisi in tempor. Sed et nibh congue, tempus odio accumsan, fringilla tellus.");

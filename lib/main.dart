@@ -19,30 +19,37 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<SliderModel> mySlides = <SliderModel>[];
-  int slideIdx = 0;
-  PageController _pageController;
-
-  Widget _builWidgetIndicator(bool isCurrentPage) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 2.0),
-      height: isCurrentPage ? 10.0 : 6.0,
-      width: isCurrentPage ? 10.0 : 6.0,
-      decoration: BoxDecoration(
-          color: isCurrentPage ? Colors.grey : Colors.grey[300],
-          borderRadius: BorderRadius.circular(12.0)),
-    );
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    mySlides = getSlides();
-    _pageController = new PageController();
-  }
-
+  List slides = getSlides();
   @override
   Widget build(BuildContext context) {
-    return Container();
+    print(slides.length);
+    final mq = MediaQuery.of(context);
+    return Scaffold(
+      backgroundColor: Color(0xFF301E2F),
+      body: Container(
+        height: mq.size.height -100,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(slides[0].imageAssetPath),
+              SizedBox(
+                height: 40,
+              ),
+              Text(slides[0].title, textAlign: TextAlign.center,style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFFFFAD3A),
+                  fontSize: 26
+              ),),
+              SizedBox(
+                height: 20,
+              ),
+              Text(slides[0].desc, textAlign: TextAlign.center,style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF524D63),
+                  fontSize: 18))
+            ],
+          )),
+    );
   }
 }
+
