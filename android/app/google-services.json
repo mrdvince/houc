@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "381603145764",
+    "project_id": "maalhous",
+    "storage_bucket": "maalhous.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381603145764:android:cea827e9cc86fa60a650b1",
+        "android_client_info": {
+          "package_name": "com.example.maalhous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381603145764-s46utch1cr175md1v50ukqe5a33mfln8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maalhous",
+            "certificate_hash": "0624b2e7f46af19f0f17ff719f4ec3c3107980f8"
+          }
+        },
+        {
+          "client_id": "381603145764-avqt7pmrqrc27mh28g6te5btkgh3nesv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf6OLsa5cVyb2aFVRLZvtTmxYlug_9nw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381603145764-avqt7pmrqrc27mh28g6te5btkgh3nesv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
