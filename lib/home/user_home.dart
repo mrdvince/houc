@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:maalhous/home/constants/color_constant.dart';
+import 'package:maalhous/home/screens/home_screen.dart';
+
 
 class UserHome extends StatelessWidget {
-  const UserHome({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color(0xFF301E2F),
-          title: Text("MaalHous."),
-        ),
-        body: Container(
-          child: Center(
-            child: Text("Willkommen in MaalHous. !!"),
-          ),
-        ),
+      theme: ThemeData(
+          accentColor: kAccentColor,
+          backgroundColor: kBackgroundColor
       ),
+      home: HomeScreen(),
     );
   }
 }
