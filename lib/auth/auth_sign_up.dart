@@ -138,7 +138,7 @@ class _RegisterViewState extends State<Register> {
       height: 50.0,
       child: FlatButton(
         onPressed: () async {
-          // TODO: firebase register
+          // firebase register
           try {
             context.read<AuthenticationService>().signUp(
                   email: _emailController.text.trim(),
