@@ -31,9 +31,9 @@ List<CardModel> cards = cardData
 
 var cardData = [
   {
-    "name": "Prambors",
+    "name": "Jennings",
     "type": "assets/images/mastercard_logo.png",
-    "balance": "6.352.251",
+    "balance": "6.352.25",
     "valid": "06/24",
     "moreIcon": 'assets/icons/more_icon_grey.svg',
     "cardBackground":'assets/icons/mastercard_bg.svg',
@@ -42,9 +42,9 @@ var cardData = [
     "secondColor": kBlackColor
   },
   {
-    "name": "Prambors",
+    "name": "Glenn",
     "type": "assets/images/jenius_logo.png",
-    "balance": "20.528.337",
+    "balance": "20.528.33",
     "valid": "02/23",
     "moreIcon": 'assets/icons/more_icon_white.svg',
     "cardBackground":'assets/svg/jenius_bg.svg',
@@ -52,11 +52,10 @@ var cardData = [
     "firstColor": kWhiteColor,
     "secondColor": kWhiteColor
   },
-
   {
-    "name": "Prambors",
+    "name": "Tranoshark",
     "type": "assets/images/mastercard_logo.png",
-    "balance": "6.352.251",
+    "balance": "6.352.21",
     "valid": "06/24",
     "moreIcon": 'assets/icons/more_icon_grey.svg',
     "cardBackground":'assets/svg/mastercard_bg.svg',
@@ -65,9 +64,9 @@ var cardData = [
     "secondColor": kBlackColor
   },
   {
-    "name": "Prambors",
+    "name": "Carula",
     "type": "assets/images/jenius_logo.png",
-    "balance": "20.528.337",
+    "balance": "20.528.37",
     "valid": "02/23",
     "moreIcon": 'assets/icons/more_icon_white.svg',
     "cardBackground":'assets/svg/jenius_bg.svg',

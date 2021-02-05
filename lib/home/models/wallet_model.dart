@@ -14,27 +14,27 @@ List<WalletModel> wallets = walletData
 
 var walletData = [
   {
-    "name": "Prambors",
+    "name": "Jadazz",
     "wallet": "Gopay",
     "walletLogo": 'assets/images/gopay_logo.png',
-    "walletNumber": '+62*** **** 1932'
+    "walletNumber": '+254*** **** 1932'
   },
   {
-    "name": "Jenny",
-    "wallet": "Ovo",
+    "name": "Cheekanderson",
+    "wallet": "Sdfgh",
     "walletLogo": 'assets/images/ovo_logo.png',
-    "walletNumber": '+62*** **** 2245'
+    "walletNumber": '+254*** **** 2245'
   },
   {
-    "name": "Jenny",
+    "name": "Smtin",
     "wallet": "Gopay",
     "walletLogo": 'assets/images/gopay_logo.png',
-    "walletNumber": '+62*** **** 2245'
+    "walletNumber": '+254*** **** 2245'
   },
   {
-    "name": "Prambors",
+    "name": "Dayhat",
     "wallet": "Dana",
     "walletLogo": 'assets/images/dana_logo.png',
-    "walletNumber": '+62*** **** 1932'
+    "walletNumber": '+254*** **** 1932'
   }
 ];

@@ -35,10 +35,10 @@ var transactionData = [
     "type": 'assets/icons/outcome_icon.svg',
     "colorType": kOrangeColor,
     "signType": "-",
-    "amount": "200.000",
+    "amount": "2000.00",
     "information": "Transfer to",
-    "recipient": "Michael Ballack",
-    "date": "12 Feb 2020",
+    "recipient": "Carula Jordanlick",
+    "date": "1 Feb 2021",
     "card": "assets/images/mastercard_logo.png"
   },
   {
@@ -46,10 +46,10 @@ var transactionData = [
     "type": 'assets/icons/income_icon.svg',
     "colorType": kGreenColor,
     "signType": "+",
-    "amount": "352.000",
+    "amount": "352.00",
     "information": "Received from",
-    "recipient": "Patrick Star",
-    "date": "10 Feb 2020",
+    "recipient": "Edward Saphim",
+    "date": "1 Jan 2021",
     "card": "assets/images/jenius_logo_blue.png"
   },
   {
@@ -57,10 +57,10 @@ var transactionData = [
     "type": 'assets/icons/outcome_icon.svg',
     "colorType": kOrangeColor,
     "signType": "-",
-    "amount": "53.265",
+    "amount": "532.65",
     "information": "Monthly Payment",
     "recipient": "Spotify",
-    "date": "09 Feb 2020",
+    "date": "09 Jan 2021",
     "card": "assets/images/mastercard_logo.png"
   }
 ];
