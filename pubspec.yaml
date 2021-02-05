@@ -8,22 +8,36 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.1
+#  cupertino_icons: ^1.0.2
   firebase_core: ^0.7.0
   firebase_auth: ^0.20.0+1
   provider: ^4.3.3
-  shared_preferences: ^0.5.12+4
+  flutter_svg: 0.18.0
+  google_fonts: ^1.1.0
+  slide_to_confirm: ^0.0.6
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  integration_test:
-    sdk: flutter
+#  integration_test:
+#    sdk: flutter
   flutter_launcher_icons: ^0.8.1
 flutter:
   uses-material-design: true
   assets:
-  - assets/
+    - assets/
+    - assets/icons/
+    - assets/images/
+    - assets/svg/
 flutter_icons:
   image_path: assets/logo.png
   android: true
   ios: true
+
+fonts:
+  - family: nav_drawer
+    fonts:
+      - asset: assets/icons/nav_drawer.ttf
+  - family: slide_icon
+    fonts:
+      - asset: assets/icons/slide_icon.ttf
