@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:maalhous/home/constants/color_constant.dart';
-import 'package:maalhous/home/custom_icons/flutter_custom_icon.dart';
 import 'package:maalhous/home/models/card_model.dart';
 import 'package:maalhous/home/models/transaction_model.dart';
 import 'package:maalhous/home/models/wallet_model.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:slide_to_confirm/slide_to_confirm.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -38,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: EdgeInsets.only(left: 24, top: 8, bottom: 16),
               child: Text(
-                'Hi, Prambors!',
+                'Hi, Droid!',
                 style: GoogleFonts.nunito(
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
@@ -111,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             left: 16,
                             top: 81,
                             child: Text(
-                              'Rp ' + cards[index].balance,
+                              'Ksh ' + cards[index].balance,
                               style: GoogleFonts.nunito(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w700,
@@ -233,7 +231,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           left: 16,
                           child: Text(
                             transactions[index].signType +
-                                'Rp ' +
+                                'Ksh ' +
                                 transactions[index].amount,
                             style: GoogleFonts.nunito(
                                 fontSize: 16,
@@ -389,7 +387,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(height: 60, child: _getNavBar()),
+      bottomNavigationBar: Container(height: 100, child: _getNavBar()),
     );
   }
 }
@@ -413,12 +411,65 @@ class _getNavBar extends StatelessWidget {
                 gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
-                    colors: [Colors.teal, Colors.teal.shade900])),
+                    colors: [Color(0xFF524D63), Color(0xFF301e2f)])),
           ),
         ),
       ),
+      Positioned(
+        bottom: 45,
+        width: MediaQuery.of(context).size.width,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            _buildNavItem(Icons.home, false),
+            SizedBox(width: 1),
+            _buildNavItem(Icons.account_balance_wallet, true),
+            SizedBox(width: 1),
+            _buildNavItem(Icons.account_circle, false),
+          ],
+        ),
+      ),
+      Positioned(
+        bottom: 10,
+        width: MediaQuery.of(context).size.width,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text("Home",
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.9),
+                    fontWeight: FontWeight.w500)),
+            SizedBox(width: 1),
+            Text("Payments",
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.9),
+                    fontWeight: FontWeight.w500)),
+            SizedBox(width: 1),
+            Text("Accounts",
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.9),
+                    fontWeight: FontWeight.w500)),
+          ],
+        ),
+      )
     ]);
   }
+}
+
+_buildNavItem(IconData icon, bool active) {
+  return CircleAvatar(
+    radius: 25,
+    backgroundColor: Color(0xFF524D63), //Colors.teal.shade900,
+    child: CircleAvatar(
+      radius: 20,
+      backgroundColor:
+          active ? Colors.white.withOpacity(0.9) : Colors.transparent,
+      child: Icon(
+        icon,
+        color: active ? Colors.black : Colors.white.withOpacity(0.9),
+      ),
+    ),
+  );
 }
 
 class NavBarClipper extends CustomClipper<Path> {
