@@ -1,16 +1,72 @@
-# maalhous
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/Droid021/maalhous">
+    <img src="screenshots/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-A new Flutter application.
+  <h3 align="center">Maalhous</h3>
 
-## Getting Started
+  <p align="center">
+  A sort of banking and loan application flutter app using firebase for auth and storage and designs stitched together from different sources online. 
+  Arranged as feature by folder.
 
-This project is a starting point for a Flutter application.
+  Onboarding UI designs by Lewis. www.pixelewis.com 
+    <br />
+    <a href="#"><strong>Explore »</strong></a>
+   </p>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1. Clone the repo
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+git clone https://github.com/Droid021/maalhous.git
+```
+
+2. Change directory to the cloned repo directory
+
+```sh
+cd maalhous
+```
+
+3. Run the project
+
+```JS
+flutter run
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Sample Screenshots
+
+<p align="center">
+    Clone the repo and build the apk.
+    <br />
+    <a href="#"><strong>Download the apk and Explore »</strong></a>
+   </p>
+
+### Onboarding
+
+<img src="screenshots/4.jpeg" width="280"/> <img src="screenshots/5.jpeg" width="280"/>
+
+### Login / Register
+
+<img src="screenshots/2.jpeg" width="280"/> <img src="screenshots/3.jpeg" width="280"/>
+
+### Home Screen
+
+<img src="screenshots/1.jpeg" width="280"/>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Droid - [@darctrac3](https://twitter.com/darctrac3)
