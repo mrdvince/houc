@@ -42,18 +42,16 @@ flutter run
 ## Sample Screenshots
 
 <p align="center">
-    Clone the repo and build the apk.
-    <br />
-    <a href="#"><strong>Download the apk and Explore »</strong></a>
+    <a href="#"><strong>Clone the repo and build the apk. »</strong></a>
    </p>
 
 ### Onboarding
 
-<img src="screenshots/4.jpeg" width="280"/> <img src="screenshots/5.jpeg" width="280"/>
+<img src="screenshots/5.jpeg" width="280"/>   <img src="screenshots/4.jpeg" width="280"/>
 
 ### Login / Register
 
-<img src="screenshots/2.jpeg" width="280"/> <img src="screenshots/3.jpeg" width="280"/>
+<img src="screenshots/2.jpeg" width="280"/>   <img src="screenshots/3.jpeg" width="280"/>
 
 ### Home Screen
 
