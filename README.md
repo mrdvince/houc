@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Droid021/maalhous">
+  <a href="https://github.com/Droid021/houc">
     <img src="screenshots/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,13 +22,13 @@
 1. Clone the repo
 
 ```sh
-git clone https://github.com/Droid021/maalhous.git
+git clone https://github.com/Droid021/houc.git
 ```
 
 2. Change directory to the cloned repo directory
 
 ```sh
-cd maalhous
+cd houc
 ```
 
 3. Run the project
@@ -59,4 +59,6 @@ flutter run
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
+### Clause
+If you have any objective or I have used an asset that's not properly credited or needs to be taken down, reach out with what should be removed etc 
+and I will gladly do that
