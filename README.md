@@ -49,10 +49,6 @@ flutter run
 
 <img src="screenshots/5.jpeg" width="280"/>   <img src="screenshots/4.jpeg" width="280"/>
 
-### Login / Register
-
-<img src="screenshots/2.jpeg" width="280"/>   <img src="screenshots/3.jpeg" width="280"/>
-
 ### Home Screen
 
 <img src="screenshots/1.jpeg" width="280"/>
@@ -64,7 +60,3 @@ flutter run
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
-
-## Contact
-
-Droid - [@darctrac3](https://twitter.com/darctrac3)
