@@ -5,7 +5,7 @@
     <img src="screenshots/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Maalhous</h3>
+  <h3 align="center">Houc</h3>
 
   <p align="center">
   A sort of banking and loan application flutter app using firebase for auth and storage and designs stitched together from different sources online. 
